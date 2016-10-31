@@ -17,12 +17,6 @@ html{
 	font-family: "Lucida Sans", sans-serif, serif;
 }
 
-.header{
-	background-color: #33ccae;
-	color: #000000;
-	padding: 15px;
-}
-
 .card{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
@@ -40,6 +34,41 @@ html{
 
 .card img{
 	border-radius: 5px 5px 0 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li.logo{
+	background-color: #4fa787;
+}
+
+ul.topnav li.left {
+	float: left;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.left,
+    ul.topnav li {float: none;}
+}
+
+.content{
+	padding: 16px;
 }
 
 .menu ul{
@@ -61,10 +90,10 @@ html{
 }
 
 .button {
-	background-color: #4CAF50;
+	background-color: #4fa787;
 	border: none;
 	color: white;
-	padding: 15px 32px;
+	padding: 5px 16px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -84,11 +113,29 @@ html{
 }
 
 .footer {
-    background-color: #0099cc;
+    background-color: #333;
     color: #ffffff;
     text-align: center;
     font-size: 12px;
     padding: 15px;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
 
 /* For mobile phones: */
@@ -96,7 +143,7 @@ html{
     width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
     /* For tablets: */
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
@@ -112,7 +159,7 @@ html{
     .col-m-12 {width: 100%;}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
